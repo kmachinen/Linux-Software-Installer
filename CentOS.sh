@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #######################################
-#CentOs DevOps Setup
+#CentOS DevOps Setup
 #######################################
 
 cat /etc/os-release
