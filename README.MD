@@ -14,7 +14,7 @@ package. To use a script:
    ```bash
    git clone https://github.com/kiran-machineni/Linux-Software-Installer.git
 
-   cd Linux-Soft-Installer
+   cd Linux-Software-Installer
    ```
 
 2. Navigate to the desired software directory:
