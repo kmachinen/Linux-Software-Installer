@@ -44,16 +44,25 @@ sudo systemctl status docker
 # Verify Docker access
 docker run hello-world
 
+# install elk in single docker container
+sudo docker pull sebp/elk
+#run elk
+docker run -d -p 5601:5601 -p 9200:9200 -p 5044:5044 --name elk sebp/elk
+
+# access elasticsearch
+# http://localhost:5601
+#access kibana
+# http://localhost:5601
+
 # Minikube
 # https://minikube.sigs.k8s.io/docs/start/
-
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+$ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb
 
+#start minikube
+# $ minikube start
 
-# minikube start
-
-# minikube dashboard
+# $ minikube dashboard
 
 # install kubectl.
 # https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-native-package-management
