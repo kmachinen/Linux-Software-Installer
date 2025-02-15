@@ -42,6 +42,7 @@ sudo systemctl start docker
 sudo docker run hello-world
 
 # install aws cli
+sudo yum install unzip -y
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
