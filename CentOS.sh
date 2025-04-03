@@ -56,3 +56,18 @@ sudo yum install unzip -y
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+
+# install go
+GO_VERSION=$(curl -s https://go.dev/VERSION?m=text)
+wget https://go.dev/dl/${GO_VERSION}.linux-amd64.tar.gz
+
+sudo tar -C /usr/local -xzf go*.linux-amd64.tar.gz
+
+#for bash
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+
+go version
+
