@@ -14,7 +14,17 @@ sudo yum update
 
 sudo yum install sshpass
 
-#SElinux
+#Install Development Tools & Utilities
+sudo dnf groupinstall -y "Development Tools"
+sudo dnf install -y \
+    wget curl git unzip tar nano vim epel-release \
+    gcc gcc-c++ make automake autoconf cmake \
+    openssl-devel zlib-devel bzip2 bzip2-devel \
+    xz xz-devel sqlite sqlite-devel \
+    libffi-devel readline-devel
+
+sudo dnf install -y zip unzip
+
 
 #install git
 sudo yum install git
