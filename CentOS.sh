@@ -58,8 +58,7 @@ unzip awscli-bundle.zip
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
 # install go
-GO_VERSION=$(curl -s https://go.dev/VERSION?m=text)
-wget https://go.dev/dl/${GO_VERSION}.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
 
 sudo tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 
