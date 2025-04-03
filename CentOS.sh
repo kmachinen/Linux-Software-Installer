@@ -70,3 +70,5 @@ source ~/.bashrc
 
 go version
 
+# install kind(k8s on docker)
+go install sigs.k8s.io/kind@v0.27.0 && kind create cluster
